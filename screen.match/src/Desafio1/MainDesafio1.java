@@ -22,6 +22,6 @@ public class MainDesafio1 {
         musica.avaliar(10);
 
         musica.exibirFixaTecnica();
-        System.out.println();!
+        System.out.println();
     }
 }
