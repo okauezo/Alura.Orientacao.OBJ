@@ -30,5 +30,13 @@ public class MainDesafio1 {
         carro.cor = "Chumbo";
         carro.calcularIdade();
         carro.fichaTecnica();
+        System.out.println();
+
+        Aluno aluno = new Aluno();
+        aluno.nome = "Kauê";
+        aluno.idade = 21;
+        aluno.matricula = 554403;
+        aluno.exibirInformacoes();
+
     }
 }
