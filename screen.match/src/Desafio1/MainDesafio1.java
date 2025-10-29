@@ -35,6 +35,7 @@ public class MainDesafio1 {
         carro.fichaTecnica();
         System.out.println();
 
+        System.out.println("Aluno");
         Aluno aluno = new Aluno();
         aluno.nome = "Kauê";
         aluno.idade = 21;
@@ -42,6 +43,7 @@ public class MainDesafio1 {
         aluno.exibirInformacoes();
         System.out.println();
 
+        System.out.println("Caneta");
         Caneta caneta = new Caneta();
         caneta.cor = "AZUL";
         caneta.modelo = "Bic";
