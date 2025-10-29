@@ -7,11 +7,13 @@ public class MainDesafio1 {
         pessoa.exibirMensagem();
         System.out.println();
 
+        System.out.println("Calculadora");
         Calculadora calcular = new Calculadora();
         double resultado = calcular.numero(8);
         System.out.println(" O dobro entre os Numeros é: " + resultado );
         System.out.println();
 
+        System.out.println("Musica");
         Musica musica = new Musica();
         musica.titulo = "COFFEE BEAN";
         musica.artista = "Travis Scoot";
@@ -24,6 +26,7 @@ public class MainDesafio1 {
         musica.exibirFixaTecnica();
         System.out.println();
 
+        System.out.println("Carro");
         Carro carro = new Carro();
         carro.modelo = "Polo";
         carro.ano = 2019;
@@ -37,6 +40,16 @@ public class MainDesafio1 {
         aluno.idade = 21;
         aluno.matricula = 554403;
         aluno.exibirInformacoes();
+        System.out.println();
+
+        Caneta caneta = new Caneta();
+        caneta.cor = "AZUL";
+        caneta.modelo = "Bic";
+        caneta.ponta = 0.5;
+        caneta.precoCaneta = 3.99;
+        caneta.StatusCaneta();
+        System.out.println();
+
 
     }
 }
