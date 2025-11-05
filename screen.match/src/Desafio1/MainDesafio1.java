@@ -1,7 +1,7 @@
 package Desafio1;
 
 public class MainDesafio1 {
-    public static void main() {
+    public static void main(String[] args) {
 
         PessoaDesafio1 pessoa = new PessoaDesafio1();
         pessoa.exibirMensagem();
