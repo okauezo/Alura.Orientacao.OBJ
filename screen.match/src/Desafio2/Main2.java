@@ -12,9 +12,14 @@ public class Main2 {
 
         Produto produto = new Produto();
         produto.setNomeProduto("Martelo");
-        produto.setPrecoProduto(30);
+        produto.setPrecoProduto(99.8);
+
+        System.out.println("antes do desconto");
         produto.exibirProduto();
 
-        produto.aplicarDesconto(300);
+
+        produto.aplicarDesconto(20.0);
+        System.out.println("depois do desconto");
+        produto.exibirProduto();
     }
 }
