@@ -9,5 +9,12 @@ public class Main2 {
         System.out.println(idadePessoa.getIdade() + " Anos");
         idadePessoa.verificarIdade();
 
+
+        Produto produto = new Produto();
+        produto.setNomeProduto("Martelo");
+        produto.setPrecoProduto(30);
+        produto.exibirProduto();
+
+        produto.aplicarDesconto(300);
     }
 }
