@@ -21,5 +21,6 @@ public class Main2 {
         produto.aplicarDesconto(20.0);
         System.out.println("depois do desconto");
         produto.exibirProduto();
+
     }
 }
