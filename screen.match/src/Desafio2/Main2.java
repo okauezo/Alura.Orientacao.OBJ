@@ -22,5 +22,14 @@ public class Main2 {
         System.out.println("depois do desconto");
         produto.exibirProduto();
 
+        Aluno aluno = new Aluno();
+        aluno.setNome("Kauê Pires Moreira");
+        aluno.setNota1(8);
+        aluno.setNota2(6);
+        aluno.setNota3(7);
+        double media = aluno.calcularMedia();
+        System.out.println("nome do aluno: " + aluno.getNome());
+        System.out.println("A média do " + aluno.getNome() + " é: " + media);
+
     }
 }
