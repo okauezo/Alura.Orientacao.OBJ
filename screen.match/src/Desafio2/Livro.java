@@ -24,5 +24,8 @@ public class Livro {
         this.autor = autor;
     }
 
-    public void exibirDetalhes(){}
+    public void exibirDetalhes(){
+        System.out.println("Titulo: " + titulo);
+        System.out.println("Autor: " + autor);
+    }
 }

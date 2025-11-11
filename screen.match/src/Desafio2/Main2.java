@@ -9,6 +9,7 @@ public class Main2 {
         System.out.println(idadePessoa.getIdade() + " Anos");
         idadePessoa.verificarIdade();
 
+        System.out.println();
 
         Produto produto = new Produto();
         produto.setNomeProduto("Martelo");
@@ -22,6 +23,8 @@ public class Main2 {
         System.out.println("depois do desconto");
         produto.exibirProduto();
 
+        System.out.println();
+
         Aluno aluno = new Aluno();
         aluno.setNome("Kauê Pires Moreira");
         aluno.setNota1(8);
@@ -31,5 +34,11 @@ public class Main2 {
         System.out.println("nome do aluno: " + aluno.getNome());
         System.out.println("A média do " + aluno.getNome() + " é: " + media);
 
+        System.out.println();
+
+        Livro livro = new Livro();
+        livro.setTitulo("Diario De Um Banana");
+        livro.setAutor("Jeff Kinney");
+        livro.exibirDetalhes();
     }
 }
