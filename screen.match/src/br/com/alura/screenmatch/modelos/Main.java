@@ -24,6 +24,8 @@ public class Main {
         strangthings.setNome("Strang Things");
         strangthings.setAnoLancamento(2016);
         strangthings.avalia(8.8);
+        strangthings.setTemporadas(5);
+        strangthings.setMinutosPorEpisodio(60);
         strangthings.exibirFichaTecnica();
     }
 }
