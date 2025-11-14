@@ -1,7 +1,7 @@
 package br.com.alura.screenmatch.modelos;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] StrangThings) {
         Filme meuFilme = new Filme();
         meuFilme.setNome("O Poderoso Chefão");
         meuFilme.setAnoLancamento(1988);
@@ -17,5 +17,13 @@ public class Main {
         //meuFilme.somaDasAvaliacoes = 10;
         //meuFilme.somaDasAvaliacoes = 1;
         IO.println(meuFilme.pegaMedia());
+
+        System.out.println();
+
+        Serie strangthings = new Serie();
+        strangthings.setNome("Strang Things");
+        strangthings.setAnoLancamento(2016);
+        strangthings.avalia(8.8);
+        strangthings.exibirFichaTecnica();
     }
 }
