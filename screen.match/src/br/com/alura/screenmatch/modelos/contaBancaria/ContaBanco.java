@@ -1,4 +1,4 @@
-package br.com.alura.screenmatch.modelos;
+package br.com.alura.screenmatch.modelos.contaBancaria;
 
 public class ContaBanco {
 
@@ -22,5 +22,21 @@ public class ContaBanco {
         } else {
             System.out.println("Saldo insuficiente!");
         }
+    }
+
+    public String getTitula() {
+        return titula;
+    }
+
+    public void setTitula(String titula) {
+        this.titula = titula;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
     }
 }
