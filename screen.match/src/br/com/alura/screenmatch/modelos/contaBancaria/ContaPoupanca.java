@@ -9,4 +9,16 @@ public class ContaPoupanca extends ContaBanco{
         System.out.println("juros atual: " + juros);
     }
 
+    public void sacar(double valor){
+        double taxaSaque = 0.1;
+        super.sacar(valor + taxaSaque);
+    }
+
+    public double getTaxaDeJuros() {
+        return taxaDeJuros;
+    }
+
+    public void setTaxaDeJuros(double taxaDeJuros) {
+        this.taxaDeJuros = taxaDeJuros;
+    }
 }
