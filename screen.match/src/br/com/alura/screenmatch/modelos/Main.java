@@ -23,9 +23,11 @@ public class Main {
         Serie strangthings = new Serie();
         strangthings.setNome("Strang Things");
         strangthings.setAnoLancamento(2016);
+        strangthings.exibirFichaTecnica();
         strangthings.avalia(8.8);
         strangthings.setTemporadas(5);
-        strangthings.setMinutosPorEpisodio(60);
-        strangthings.exibirFichaTecnica();
+        strangthings.setEpisodiosPorTemporada(9);
+        strangthings.setMinutosPorEpisodio(55);
+        System.out.println("Duração da Serie: " + strangthings.getDuracaoEmMinutos());
     }
 }
