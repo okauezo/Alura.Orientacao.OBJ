@@ -1,5 +1,7 @@
 package br.com.alura.screenmatch.modelos;
 
+import br.com.alura.screenmatch.calculadora.CalculadoraDeTempo;
+
 public class Main {
     public static void main(String[] StrangThings) {
         Filme meuFilme = new Filme();
@@ -29,5 +31,15 @@ public class Main {
         strangthings.setEpisodiosPorTemporada(9);
         strangthings.setMinutosPorEpisodio(55);
         System.out.println("Duração da Serie: " + strangthings.getDuracaoEmMinutos());
+        System.out.println();
+
+        Filme outroFilme = new Filme();
+        outroFilme.setNome("Vingadores");
+        outroFilme.setDuracaoEmMinutos(200);
+
+        CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
+        calculadora.inclui(meuFilme);
+        calculadora.inclui(outroFilme);
+        System.out.println(calculadora.getTempoTotal());
     }
 }
