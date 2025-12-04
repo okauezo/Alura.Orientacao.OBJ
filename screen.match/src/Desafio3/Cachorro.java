@@ -8,4 +8,10 @@ public class Cachorro extends Animal {
     public void abanarRabo(){
         System.out.println("Abanando o Rabo");
     }
+
+    public void nome(){
+        System.out.println("----ANIMAIS----");
+        System.out.println("Cachorro");
+        System.out.println("Nome: Zeus");
+    }
 }

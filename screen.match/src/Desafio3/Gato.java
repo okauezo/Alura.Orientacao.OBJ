@@ -8,4 +8,10 @@ public class Gato extends Animal{
     public void arranharMoveis() {
         System.out.println("Arranhando o Moveis");
     }
+
+    public void nome(){
+        System.out.println("----ANIMAIS----");
+        System.out.println("Gato ");
+        System.out.println("Nome: Tom");
+    }
 }

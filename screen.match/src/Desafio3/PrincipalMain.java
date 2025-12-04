@@ -6,5 +6,18 @@ public class PrincipalMain {
 
         polo.setPreco(75.000, 82.000, 97.000);
         polo.exibirInformacoes();
+
+        System.out.println();
+
+        Cachorro cachorro = new Cachorro();
+        cachorro.nome();
+        cachorro.emitirSom();
+        cachorro.abanarRabo();
+
+        Gato gato = new Gato();
+        gato.nome();
+        gato.emitirSom();
+        gato.arranharMoveis();
+
     }
 }
