@@ -32,7 +32,6 @@ public class Carro {
 
     public void exibirInformacoes(){
         System.out.println("Modelo: " + nomeModelo);
-        System.out.println("Modelo: " + nomeModelo);
         System.out.println("Preços:");
         System.out.println("Ano 1: " + precoAno1);
         System.out.println("Ano 2: " + precoAno2);
