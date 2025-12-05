@@ -18,5 +18,14 @@ public class PrincipalMain {
         gato.nome();
         gato.emitirSom();
         gato.arranharMoveis();
+
+        System.out.println();
+
+        ContaBancaria conta = new ContaBancaria();
+        conta.setSaldo(5000);
+        System.out.println("Saldo inicial: R$ " + conta.getSaldo());
+        conta.depositar(900);
+        conta.sacar(690);
+        System.out.println("Saldo Atualizado: R$ " + conta.getSaldo());
     }
 }
