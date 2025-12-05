@@ -18,6 +18,5 @@ public class PrincipalMain {
         gato.nome();
         gato.emitirSom();
         gato.arranharMoveis();
-
     }
 }
