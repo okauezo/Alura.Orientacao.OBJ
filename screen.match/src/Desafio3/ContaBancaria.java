@@ -16,17 +16,19 @@ public class ContaBancaria {
         this.saldo = saldo;
     }
 
-    public double depositar(double valor) {
+    public void depositar(double valor) {
         saldo += valor;
-        return saldo;
     }
 
-    public double sacar(double valor) {
-        saldo -= valor;
-        return saldo;
+    public void sacar(double valor) {
+        if (valor <= saldo) {
+            saldo -= valor;
+        } else {
+            System.out.println("Saldo insuficiente.");
+        }
     }
 
-    public void  consultarSaldo(){
+    public void consultarSaldo() {
         System.out.println("Saldo atual: " + saldo);
     }
 }
