@@ -1,7 +1,7 @@
 package Desafio3;
 
 public class NumerosPrimos {
-    public class NumerosPrimos {
+
         public boolean verificarPrimalidade(int numero) {
             if (numero <= 1) {
                 return false;
@@ -24,4 +24,3 @@ public class NumerosPrimos {
             System.out.println();
         }
     }
-}
