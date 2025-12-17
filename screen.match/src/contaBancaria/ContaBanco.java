@@ -1,4 +1,4 @@
-package br.com.alura.screenmatch.modelos.contaBancaria;
+package contaBancaria;
 
 public class ContaBanco {
 
