@@ -1,6 +1,7 @@
 package br.com.alura.screenmatch.modelos;
 
 import br.com.alura.screenmatch.calculadora.CalculadoraDeTempo;
+import br.com.alura.screenmatch.calculadora.FiltroRecomendacao;
 
 public class Main {
     public static void main(String[] StrangThings) {
@@ -42,5 +43,8 @@ public class Main {
         calculadora.inclui(outroFilme);
         calculadora.inclui(strangthings);
         System.out.println(calculadora.getTempoTotal());
+
+        FiltroRecomendacao filtro = new FiltroRecomendacao();
+        filtro.Filtra(meuFilme);
     }
 }
