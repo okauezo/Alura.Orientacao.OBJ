@@ -6,9 +6,9 @@ public class FiltroRecomendacao {
 
     public void Filtra(Classificavel classificavel){
         if (classificavel.getClassificavel() >= 4){
-            System.out.println("Filme em alta no momento");
+            System.out.println("Em alta no momento");
         } else if(classificavel.getClassificavel() >= 2){
-            System.out.println("Filme com uma media avaliação");
+            System.out.println("Com uma media avaliação");
         } else {
             System.out.println("Coloque na sua lista para assistir depois!");
         }

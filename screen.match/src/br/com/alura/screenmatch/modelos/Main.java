@@ -13,7 +13,7 @@ public class Main {
         meuFilme.exibirFichaTecnica();
         meuFilme.avalia((double) 8.0F);
         meuFilme.avalia((double) 8.0F);
-        meuFilme.avalia((double) 5.0F);
+        meuFilme.avalia((double) 9.0F);
         //System.out.println("Nota: " + meuFilme.somaDasAvaliacoes);
         IO.println("Total de Avaliações: " + meuFilme.getTotalDeAvaliacoes());
         IO.println("Soma entre elas: " + meuFilme.pegaMedia());
@@ -46,5 +46,11 @@ public class Main {
 
         FiltroRecomendacao filtro = new FiltroRecomendacao();
         filtro.Filtra(meuFilme);
+
+        Episodio episodio = new Episodio();
+        episodio.setNumero(2);
+        episodio.setSerie(strangthings);
+        episodio.setTotalVisualizacoes(600);
+        filtro.Filtra(episodio);
     }
 }
