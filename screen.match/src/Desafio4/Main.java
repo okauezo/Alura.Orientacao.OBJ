@@ -42,5 +42,15 @@ public class Main {
 
         System.out.println("Preço final do livro: " + livro.calcularPrecoFinal());
         System.out.println("Preço final do produto físico: " + produto.calcularPrecoFinal());
+        System.out.println();
+
+        Vendavel produto1 = new Produto("Teclado", 100);
+        Vendavel servico = new Servico("Instalação", 80);
+
+        System.out.println("Produto (3 unidades): " + produto1.calcularPrecoTotal(3));
+        System.out.println("Produto com 10% desconto: " + produto1.aplicarDesconto(10));
+
+        System.out.println("Serviço (2 horas): " + servico.calcularPrecoTotal(2));
+        System.out.println("Serviço com 5% desconto: " + servico.aplicarDesconto(5));
     }
 }
