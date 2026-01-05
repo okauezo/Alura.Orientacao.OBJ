@@ -3,10 +3,10 @@ package Desafio4;
 public class Main {
     static void main() {
 
-        ConversaoFinanceira conversor = new ConversorMoeda();
+        ConversaoFinanceira c = new ConversorMoeda();
 
         double valorDolar = 100;
-        double valorEmReal = conversor.converterDolarParaReal(valorDolar);
+        double valorEmReal = c.converterDolarParaReal(valorDolar);
 
         System.out.println("Valor dolar: " + valorDolar + "$");
         System.out.println("Valor Em Real: " + valorEmReal + "R$");
@@ -23,5 +23,16 @@ public class Main {
                 new TabuadaMultiplicacao(5);
 
         tabuada.mostrarTabuada();
+        System.out.println();
+
+        ConversorTemperaturaPadrao con =
+                new ConversorTemperaturaPadrao(30);
+
+        System.out.println("C para F: " + con.celsiusParaFahrenheit());
+
+        ConversorTemperaturaPadrao conversor2 =
+                new ConversorTemperaturaPadrao(86);
+
+        System.out.println("F para C: " + conversor2.fahrenheitParaCelsius());
     }
 }
