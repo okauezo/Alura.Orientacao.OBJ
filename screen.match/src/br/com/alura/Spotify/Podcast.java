@@ -29,4 +29,13 @@ public class Podcast extends Audio{
     public void setConvidado(String convidado) {
         this.convidado = convidado;
     }
+
+    @Override
+    public double getClassificacao() {
+        if (this.getCurtidas() > 500 ){
+            return 10;
+        } else {
+            return 8;
+        }
+    }
 }
