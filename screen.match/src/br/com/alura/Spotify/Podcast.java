@@ -3,6 +3,7 @@ package br.com.alura.Spotify;
 public class Podcast extends Audio{
 
     private String apresetador;
+    private String convidado;
     private String descricao;
 
     public String getApresetador() {
@@ -19,5 +20,13 @@ public class Podcast extends Audio{
 
     public void setDescricao(String descricao) {
         this.descricao = descricao;
+    }
+
+    public String getConvidado() {
+        return convidado;
+    }
+
+    public void setConvidado(String convidado) {
+        this.convidado = convidado;
     }
 }
