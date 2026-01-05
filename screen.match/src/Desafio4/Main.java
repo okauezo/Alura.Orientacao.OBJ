@@ -34,5 +34,13 @@ public class Main {
                 new ConversorTemperaturaPadrao(86);
 
         System.out.println("F para C: " + conversor2.fahrenheitParaCelsius());
+        System.out.println();
+
+
+        Calculavel livro = new Livro(100);
+        Calculavel produto = new ProdutoFisico(100);
+
+        System.out.println("Preço final do livro: " + livro.calcularPrecoFinal());
+        System.out.println("Preço final do produto físico: " + produto.calcularPrecoFinal());
     }
 }
