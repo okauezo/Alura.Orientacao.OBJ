@@ -1,0 +1,23 @@
+package br.com.alura.Spotify;
+
+public class Podcast extends Audio{
+
+    private String apresetador;
+    private String descricao;
+
+    public String getApresetador() {
+        return apresetador;
+    }
+
+    public void setApresetador(String apresetador) {
+        this.apresetador = apresetador;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+}
