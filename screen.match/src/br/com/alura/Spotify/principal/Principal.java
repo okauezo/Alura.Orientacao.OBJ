@@ -1,5 +1,6 @@
 package br.com.alura.Spotify.principal;
 
+import br.com.alura.Spotify.MinhaPreferida;
 import br.com.alura.Spotify.Musica;
 import br.com.alura.Spotify.Podcast;
 
@@ -23,12 +24,16 @@ public class Principal {
        meuPodcast.setApresetador("Igao e Mitico");
        meuPodcast.setConvidado("mcKevin");
 
-       for (int i = 0; i < 10000; i++) {
+       for (int i = 0; i < 1000; i++) {
            meuPodcast.reproduz();
        }
 
        for (int i = 0; i < 2000; i++) {
            meuPodcast.curte();
        }
+
+       MinhaPreferida preferida = new MinhaPreferida();
+       preferida.incluir(meuPodcast);
+       preferida.incluir(minhaMusica);
     }
 }
