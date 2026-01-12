@@ -26,11 +26,7 @@ public class Pessoa {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Pessoa{");
-        sb.append("nome='").append(nome).append('\'');
-        sb.append(", Idade=").append(idade);
-        sb.append(", altura=").append(altura);
-        sb.append('}');
-        return sb.toString();
+
+        return "Pessoa " + nome + " - " + idade + " Anos " + " - " + altura + " Altura";
     }
 }
