@@ -3,6 +3,8 @@ package br.com.alura.screenmatch.modelos;
 import br.com.alura.screenmatch.calculadora.CalculadoraDeTempo;
 import br.com.alura.screenmatch.calculadora.FiltroRecomendacao;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] StrangThings) {
         Filme meuFilme = new Filme();
@@ -36,6 +38,7 @@ public class Main {
 
         Filme outroFilme = new Filme();
         outroFilme.setNome("Vingadores");
+        outroFilme.setAnoLancamento(2014);
         outroFilme.setDuracaoEmMinutos(200);
 
         CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
@@ -52,5 +55,21 @@ public class Main {
         episodio.setSerie(strangthings);
         episodio.setTotalVisualizacoes(600);
         filtro.Filtra(episodio);
+
+        var filmeDoKaue = new Filme();
+        filmeDoKaue.setNome("Interistelar");
+        filmeDoKaue.setAnoLancamento(2016);
+        filmeDoKaue.setDuracaoEmMinutos(400);
+        filmeDoKaue.avalia(9.8);
+        System.out.println();
+
+        ArrayList<Filme> listaDeFilmes = new ArrayList<>();
+        listaDeFilmes.add(filmeDoKaue);
+        listaDeFilmes.add(meuFilme);
+        listaDeFilmes.add(outroFilme);
+        System.out.println("Tamanho da Lista: " + listaDeFilmes.size());
+        System.out.println("Primeiro Filme: " + listaDeFilmes.get(1).getNome());
+        System.out.println(listaDeFilmes);
+        System.out.println("toString do filme " + listaDeFilmes.get(2).toString());
     }
 }
