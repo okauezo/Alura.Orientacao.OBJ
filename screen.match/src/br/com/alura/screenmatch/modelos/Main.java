@@ -6,9 +6,8 @@ import br.com.alura.screenmatch.calculadora.FiltroRecomendacao;
 import java.util.ArrayList;
 
 public class Main {
-    public static void main(String[] StrangThings) {
-        Filme meuFilme = new Filme("O Poderoso Chefão");
-        meuFilme.setAnoLancamento(1988);
+    public static void main(String[] in) {
+        Filme meuFilme = new Filme("O Poderoso Chefão", 1988);
         meuFilme.setDuracaoEmMinutos(178);
         meuFilme.setIncluidoNoPlano(true);
         meuFilme.exibirFichaTecnica();
@@ -24,9 +23,7 @@ public class Main {
 
         System.out.println();
 
-        Serie strangthings = new Serie();
-        strangthings.setNome("Strang Things");
-        strangthings.setAnoLancamento(2016);
+        Serie strangthings = new Serie("Strang Things", 2016);
         strangthings.exibirFichaTecnica();
         strangthings.avalia(8.8);
         strangthings.setTemporadas(5);
@@ -35,8 +32,7 @@ public class Main {
         System.out.println("Duração da Serie: " + strangthings.getDuracaoEmMinutos());
         System.out.println();
 
-        Filme outroFilme = new Filme("Vingadores");
-        outroFilme.setAnoLancamento(2014);
+        Filme outroFilme = new Filme("Vingadores", 2014);
         outroFilme.setDuracaoEmMinutos(200);
 
         CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
@@ -54,8 +50,7 @@ public class Main {
         episodio.setTotalVisualizacoes(600);
         filtro.Filtra(episodio);
 
-        var filmeDoKaue = new Filme("Interistelar");
-        filmeDoKaue.setAnoLancamento(2016);
+        var filmeDoKaue = new Filme("Interistelar", 2016);
         filmeDoKaue.setDuracaoEmMinutos(400);
         filmeDoKaue.avalia(9.8);
         System.out.println();
