@@ -7,8 +7,7 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] StrangThings) {
-        Filme meuFilme = new Filme();
-        meuFilme.setNome("O Poderoso Chefão");
+        Filme meuFilme = new Filme("O Poderoso Chefão");
         meuFilme.setAnoLancamento(1988);
         meuFilme.setDuracaoEmMinutos(178);
         meuFilme.setIncluidoNoPlano(true);
@@ -36,8 +35,7 @@ public class Main {
         System.out.println("Duração da Serie: " + strangthings.getDuracaoEmMinutos());
         System.out.println();
 
-        Filme outroFilme = new Filme();
-        outroFilme.setNome("Vingadores");
+        Filme outroFilme = new Filme("Vingadores");
         outroFilme.setAnoLancamento(2014);
         outroFilme.setDuracaoEmMinutos(200);
 
@@ -56,8 +54,7 @@ public class Main {
         episodio.setTotalVisualizacoes(600);
         filtro.Filtra(episodio);
 
-        var filmeDoKaue = new Filme();
-        filmeDoKaue.setNome("Interistelar");
+        var filmeDoKaue = new Filme("Interistelar");
         filmeDoKaue.setAnoLancamento(2016);
         filmeDoKaue.setDuracaoEmMinutos(400);
         filmeDoKaue.avalia(9.8);
