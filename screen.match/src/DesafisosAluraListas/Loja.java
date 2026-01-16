@@ -1,5 +1,6 @@
 package DesafisosAluraListas;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class Loja {
@@ -15,6 +16,9 @@ public class Loja {
         Produto p2 = new Produto("Travesseiro",14,2);
         Produto p3 = new Produto("Papel", 0.5,100);
 
+        LocalDate validade = LocalDate.of(2026,12,22);
+        ProdutoPerecivel perecivel = new ProdutoPerecivel("Chocolate",14.98,2, validade);
+
         System.out.println("Tamanho da Lista de Produtos: " + listaDeProdutos.size());
         System.out.println("Produto escolhido:" + listaDeProdutos.get(1));
         System.out.println("Lista completa: " + listaDeProdutos);
@@ -23,5 +27,8 @@ public class Loja {
         System.out.println("Lista de Produto P1: " + p1);
         System.out.println("Lista de Produto P2: " + p2);
         System.out.println("Lista de Produto P3: " + p3);
+        System.out.println();
+
+        System.out.println("Lista de Produto Perecivel: " + perecivel + "Validade de Produto: " + validade);
     }
 }
