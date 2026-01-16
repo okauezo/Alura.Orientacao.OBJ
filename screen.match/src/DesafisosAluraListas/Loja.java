@@ -11,8 +11,17 @@ public class Loja {
         listaDeProdutos.add(new Produto("Caderno", 9.9,14));
         listaDeProdutos.add(new Produto("Lapis", 4,22));
 
+        Produto p1 = new Produto("Coberto", 26,2);
+        Produto p2 = new Produto("Travesseiro",14,2);
+        Produto p3 = new Produto("Papel", 0.5,100);
+
         System.out.println("Tamanho da Lista de Produtos: " + listaDeProdutos.size());
         System.out.println("Produto escolhido:" + listaDeProdutos.get(1));
         System.out.println("Lista completa: " + listaDeProdutos);
+        System.out.println();
+
+        System.out.println("Lista de Produto P1: " + p1);
+        System.out.println("Lista de Produto P2: " + p2);
+        System.out.println("Lista de Produto P3: " + p3);
     }
 }
