@@ -1,7 +1,5 @@
 package DesafisosAluraListas;
 
-import java.util.ArrayList;
-
 public class Produto {
 
         private String  nome;
