@@ -13,5 +13,10 @@ public class Principal {
         System.out.println("Tamanho da lista: " + listaDePessoas.size());
         System.out.println("Primeira Pessoa Da Lista: " + listaDePessoas.get(0));
         System.out.println(listaDePessoas);
+        System.out.println();
+
+        DesaString ds = new DesaString();
+        ds.adiciona();
+        ds.imprime();
     }
 }
