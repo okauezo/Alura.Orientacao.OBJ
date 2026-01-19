@@ -24,10 +24,10 @@ public class PrincipalComListas {
         lista.add(strangthings);
 
         for(Titulo item: lista) {
-            System.out.println(item);
             System.out.println(item.getNome());
-            Filme filme = (Filme) item;
+            if(item instanceof Filme filme && filme.getClassificavel() > 2) {
             System.out.println("Classificação: " + filme.getClassificavel());
+            }
         }
     }
 }
