@@ -30,5 +30,14 @@ public class Loja {
         System.out.println();
 
         System.out.println("Lista de Produto Perecivel: " + perecivel + "Validade de Produto: " + validade);
+
+        double soma = 0;
+        for(int i = 0; i < listaDeProdutos.size(); i++){
+            Produto p = listaDeProdutos.get(i);
+            soma += p.getPreco();
+        }
+
+        double media = soma / listaDeProdutos.size();
+        System.out.println("Media: " + media);
     }
 }

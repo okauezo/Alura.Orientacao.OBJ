@@ -6,10 +6,11 @@ public class Cachorro extends Animal {
         System.out.println("au au");
     }
 
+    public Cachorro() {
+        super("correndo", "bebendo água", "comendo");
+    }
+
     public Cachorro(String correr, String beberAgua, String comer) {
         super(correr, beberAgua, comer);
     }
-
-
-
 }

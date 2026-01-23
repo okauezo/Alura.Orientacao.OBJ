@@ -12,6 +12,10 @@ public class Produto {
             this.quantidade = quantidade;
         }
 
+    public double getPreco() {
+        return preco;
+    }
+
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("Produto{");
