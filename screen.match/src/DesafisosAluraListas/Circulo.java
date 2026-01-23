@@ -1,12 +1,15 @@
 package DesafisosAluraListas;
 
-public class Circulo extends Formula{
+public class Circulo implements Formula {
 
+    private double raio;
 
-
+    public Circulo(double raio) {
+        this.raio = raio;
+    }
 
     @Override
     public double calcularArea() {
-        return calcularArea();
+        return Math.PI * raio * raio;
     }
 }
