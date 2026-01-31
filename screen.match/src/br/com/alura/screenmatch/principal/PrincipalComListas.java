@@ -29,5 +29,12 @@ public class PrincipalComListas {
             System.out.println("Classificação: " + filme.getClassificavel());
             }
         }
+
+        ArrayList<String> buscarPorNome = new ArrayList<>();
+        buscarPorNome.add("Travis Scoot");
+        buscarPorNome.add("The Weeknd");
+        buscarPorNome.add("Vintage Culture");
+
+        System.out.println(buscarPorNome);
     }
 }
