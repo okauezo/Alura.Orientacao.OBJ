@@ -32,13 +32,14 @@ public class PrincipalComListas {
             }
         }
 
-        ArrayList<String> buscaPorArtista = new ArrayList<>();
+        ArrayList<String>buscaPorArtista = new ArrayList<>();
         buscaPorArtista.add("Travis Scoot");
         buscaPorArtista.add("Vintage Culture");
         buscaPorArtista.add("The Weeknd");
-        System.out.println(buscaPorArtista);
 
         Collections.sort(buscaPorArtista);
+        System.out.println("Depois da ordenação");
         System.out.println(buscaPorArtista);
+
     }
 }
