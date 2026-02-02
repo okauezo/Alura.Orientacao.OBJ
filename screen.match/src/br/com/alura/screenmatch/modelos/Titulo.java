@@ -1,6 +1,8 @@
 package br.com.alura.screenmatch.modelos;
 
-public class Titulo {
+import org.jetbrains.annotations.NotNull;
+
+public class Titulo implements Comparable<Titulo>{
 
     private String nome;
     private int anoLancamento;
@@ -63,5 +65,10 @@ public class Titulo {
 
     public double pegaMedia() {
         return this.somaDasAvaliacoes / (double) this.totalDeAvaliacoes;
+    }
+
+    @Override
+    public int compareTo(@NotNull Titulo o) {
+        return 0;
     }
 }
