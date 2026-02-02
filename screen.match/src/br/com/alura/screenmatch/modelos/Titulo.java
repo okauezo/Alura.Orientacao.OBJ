@@ -68,7 +68,7 @@ public class Titulo implements Comparable<Titulo>{
     }
 
     @Override
-    public int compareTo(@NotNull Titulo o) {
-        return 0;
+    public int compareTo(Titulo outroTitulo) {
+        return this.getNome().compareTo(outroTitulo.getNome());
     }
 }
