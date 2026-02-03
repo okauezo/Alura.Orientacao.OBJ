@@ -40,11 +40,15 @@ public class PrincipalComListas {
         Collections.sort(buscaPorArtista);
         System.out.println("Depois da ordenação");
         System.out.println(buscaPorArtista);
+        System.out.println();
 
         System.out.println("Lista de titulos ordenadas");
         Collections.sort(lista);
         System.out.println(lista);
+        System.out.println();
         lista.sort(Comparator.comparing(Titulo::getAnoLancamento));
+        System.out.println("Lista de titulos ordenadas em Ano de lancamento");
+        System.out.println(lista);
 
     }
 }
