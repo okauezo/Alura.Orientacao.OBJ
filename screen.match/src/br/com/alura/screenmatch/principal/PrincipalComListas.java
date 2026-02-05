@@ -46,8 +46,9 @@ public class PrincipalComListas {
         Collections.sort(lista);
         System.out.println(lista);
         System.out.println();
+
         lista.sort(Comparator.comparing(Titulo::getAnoLancamento));
-        System.out.println("Lista de titulos ordenadas em Ano de lancamento");
+        System.out.println("Ordenando por ano");
         System.out.println(lista);
 
     }
