@@ -6,6 +6,7 @@ import java.util.List;
 
 public class Principal {
     static void main() {
+        //Primeiro exercicio.
 
         NumInteiros num1 = new NumInteiros(1);
         NumInteiros num3 = new NumInteiros(15);
@@ -22,5 +23,23 @@ public class Principal {
 
         Collections.sort(lista);
         System.out.println(lista);
+        System.out.println();
+        // Segundo exercicio.
+
+        Titulo titulo1 = new Titulo("Marvel");
+        Titulo titulo2 = new Titulo("DC");
+        Titulo titulo3 = new Titulo("Dark");
+        Titulo titulo4 = new Titulo("Fallout");
+
+        List<Titulo> listaTitulo = new ArrayList<>();
+        listaTitulo.add(titulo1);
+        listaTitulo.add(titulo2);
+        listaTitulo.add(titulo3);
+        listaTitulo.add(titulo4);
+
+        System.out.println(listaTitulo);
+        Collections.sort(listaTitulo);
+        System.out.println("Depois da ordenacao");
+        System.out.println(listaTitulo);
     }
 }
