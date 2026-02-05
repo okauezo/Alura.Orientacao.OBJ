@@ -41,5 +41,8 @@ public class Principal {
         Collections.sort(listaTitulo);
         System.out.println("Depois da ordenacao");
         System.out.println(listaTitulo);
+        System.out.println();
+        //Terceiro exercicio.
+
     }
 }

@@ -1,7 +1,5 @@
 package DesafisosAluraListas.ordenacao;
 
-import org.jetbrains.annotations.NotNull;
-
 public class Titulo implements Comparable<Titulo>{
 
     private String nome;
