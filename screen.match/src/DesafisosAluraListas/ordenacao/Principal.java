@@ -2,6 +2,7 @@ package DesafisosAluraListas.ordenacao;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Principal {
@@ -42,7 +43,16 @@ public class Principal {
         System.out.println("Depois da ordenacao");
         System.out.println(listaTitulo);
         System.out.println();
-        //Terceiro exercicio.
+        // Quarto exercicio.
 
+        List<String> listaObj = new LinkedList<>();
+        listaObj.add("Mouse");
+        listaObj.add("Caneta");
+        listaObj.add("Notebook");
+        listaObj.add("Lapis");
+
+        Collections.sort(listaObj);
+        System.out.println("Com ordenação");
+        System.out.println(listaObj);
     }
 }
