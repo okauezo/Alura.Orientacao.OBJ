@@ -9,6 +9,7 @@ public class ContaCliente {
     contas.add(new ContaBancaria("Sarah", 478819944, 17000));
     contas.add(new ContaBancaria("Tania", 223640881, 1200000));
     contas.add(new ContaBancaria("Kaue", 745654789, 20000));
+    contas.add(new ContaBancaria("wes", 5778678, 20000));
 
     ContaBancaria maiorConta = contas.get(0);
     for (int i = 1; i < contas.size(); i++) {
