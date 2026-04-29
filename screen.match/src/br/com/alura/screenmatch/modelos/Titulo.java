@@ -1,7 +1,5 @@
 package br.com.alura.screenmatch.modelos;
 
-import org.jetbrains.annotations.NotNull;
-
 public class Titulo implements Comparable<Titulo>{
 
     private String nome;

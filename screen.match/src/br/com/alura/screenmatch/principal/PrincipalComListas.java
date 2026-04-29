@@ -9,7 +9,7 @@ import java.util.Collections;
 import java.util.Comparator;
 
 public class PrincipalComListas {
-    static void main() {
+    public static void main(String[] args) {
 
         Filme meuFilme = new Filme("O poderoso chefão", 1970);
         meuFilme.avalia(7);
@@ -18,6 +18,7 @@ public class PrincipalComListas {
         var filmeDoKaue = new Filme("Interistelar", 2016);
         filmeDoKaue.avalia(10);
         Serie strangthings = new Serie("Strang Things", 2016);
+
 
         ArrayList<Titulo> lista = new ArrayList<>();
         lista.add(meuFilme);
