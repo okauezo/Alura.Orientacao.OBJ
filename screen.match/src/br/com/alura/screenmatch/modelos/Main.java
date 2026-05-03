@@ -15,11 +15,11 @@ public class Main {
         meuFilme.avalia((double) 8.0F);
         meuFilme.avalia((double) 9.0F);
         //System.out.println("Nota: " + meuFilme.somaDasAvaliacoes);
-        IO.println("Total de Avaliações: " + meuFilme.getTotalDeAvaliacoes());
-        IO.println("Soma entre elas: " + meuFilme.pegaMedia());
+        System.out.println("Total de Avaliações: " + meuFilme.getTotalDeAvaliacoes());
+        System.out.println("Soma entre elas: " + meuFilme.pegaMedia());
         //meuFilme.somaDasAvaliacoes = 10;
         //meuFilme.somaDasAvaliacoes = 1;
-        IO.println(meuFilme.pegaMedia());
+        System.out.println(meuFilme.pegaMedia());
 
         System.out.println();
 

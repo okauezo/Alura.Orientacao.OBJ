@@ -1,7 +1,5 @@
 package DesafisosAluraListas.ordenacao;
 
-import org.jetbrains.annotations.NotNull;
-
 public class NumInteiros implements Comparable<NumInteiros> {
 
     private int numeros;
